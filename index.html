@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main-container">
+
+    
+    <div class="first-section">
+      <div class="main-card">
+
+        <div class="main-card__user">
+          <img class="main-card__image" src="./images/image-jeremy.png" alt="user-image">
+          <div>
+            <p class="main-card__title">Report for</p>
+            <p class="main-card__name">Jeremy Robson</p>
+          </div>
+        </div>
+
+        <div class="main-card__dates">
+          <p id="daily" class="main-card__frequency main-card__frequency--active">Daily</p>
+          <p id="weekly" class="main-card__frequency">Weekly</p>
+          <p id="monthly" class="main-card__frequency">Monthly</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="second-section">
+
+       <!-- <div class="card-work">
+        <div class="card-work__background">
+          <img class="card-work__background--image" src="./images/icon-work.svg" alt="">
+        </div>
+        <div class="card-work__details">
+          <div class="card-work__up">
+            <p class="card-work__title">Work</p>
+            <img class="card-work__dots" src="./images/icon-ellipsis.svg" alt="dots">
+          </div>
+          <div class="card-work__down">
+            <p class="card-work__hours">32hrs</p>
+            <p class="card-work__state">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div> -->
+<!--
+      <div class="card-play">
+        <div class="card-play__background">
+          <img class="card-play__background--image" src="./images/icon-play.svg" alt="play">
+        </div>
+        <div class="card-play__details">
+          <div class="card-play__up">
+            <p class="card-play__title">Play</p>
+            <img class="card-play__dots" src="./images/icon-ellipsis.svg" alt="dots">
+          </div>
+          <div class="card-play__down">
+            <p class="card-play__hours">32hrs</p>
+            <p class="card-play__state">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-study">
+        <div class="card-study__background">
+          <img class="card-study__background--image" src="./images/icon-study.svg" alt="study">
+        </div>
+        <div class="card-study__details">
+          <div class="card-study__up">
+            <p class="card-study__title">Study</p>
+            <img class="card-study__dots" src="./images/icon-ellipsis.svg" alt="dots">
+          </div>
+          <div class="card-study__down">
+            <p class="card-study__hours">32hrs</p>
+            <p class="card-study__state">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-exercise">
+        <div class="card-exercise__background">
+          <img class="card-exercise__background--image" src="./images/icon-exercise.svg" alt="exercise">
+        </div>
+        <div class="card-exercise__details">
+          <div class="card-exercise__up">
+            <p class="card-exercise__title">Exercise</p>
+            <img class="card-exercise__dots" src="./images/icon-ellipsis.svg" alt="dots">
+          </div>
+          <div class="card-exercise__down">
+            <p class="card-exercise__hours">32hrs</p>
+            <p class="card-exercise__state">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-social">
+        <div class="card-social__background">
+          <img class="card-social__background--image" src="./images/icon-social.svg" alt="social">
+        </div>
+        <div class="card-social__details">
+          <div class="card-social__up">
+            <p class="card-social__title">Social</p>
+            <img class="card-social__dots" src="./images/icon-ellipsis.svg" alt="dots">
+          </div>
+          <div class="card-social__down">
+            <p class="card-social__hours">32hrs</p>
+            <p class="card-social__state">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-self-care">
+        <div class="card-self-care__background">
+          <img class="card-self-care__background--image" src="./images/icon-self-care.svg" alt="self care">
+        </div>
+        <div class="card-self-care__details">
+          <div class="card-self-care__up">
+            <p class="card-self-care__title">Self Care</p>
+            <img class="card-self-care__dots" src="./images/icon-ellipsis.svg" alt="dots">
+          </div>
+          <div class="card-self-care__down">
+            <p class="card-self-care__hours">32hrs</p>
+            <p class="card-self-care__state">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.youtube.com/CodingTube">David Ruiz</a>.
+  </footer>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

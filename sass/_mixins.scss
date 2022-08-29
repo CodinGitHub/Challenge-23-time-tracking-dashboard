@@ -1,0 +1,86 @@
+@use 'variables';
+
+@mixin card($bg-color){
+    margin-bottom: 105px;
+    position: relative;
+    &__background{
+        height: 80px;
+        background-color: $bg-color;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        overflow: hidden;
+        &--image{
+            margin-top: -10px;
+            padding-left: 235px;
+        }
+    }
+    &__details{
+        position: absolute;
+        width: 100%;
+        background-color: variables.$Dark-blue;
+        height: 122px;
+        border-radius: 16px;
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 25px;
+        &:hover{
+            background-color: variables.$Desaturated-blue;
+            cursor: pointer;
+        }
+    }
+    &__up{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__down{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-weight: 500;
+        color: variables.$White;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+    &__hours{
+        font-size: 2em;
+        color: variables.$White;
+        font-weight: 300;
+    }
+    &__dots{
+        margin: 10px 0 18px 90px;
+        &:hover{
+            color: red;
+        }
+    }
+    &__state{
+        font-weight: 300;
+    }
+    @media (min-width: 1200px) {
+        width: 240px;
+        height: 244px;
+        margin-bottom: 24px;
+        &__background{
+            &--image{
+                margin-top: -10px;
+                padding-left: 140px;
+            }
+        }
+        &__details{
+            height: 200px;
+        }
+        &__down{
+            height: 300px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 0;
+        }
+        &__hours{
+            font-size: 3.5em;
+        }
+    }
+}

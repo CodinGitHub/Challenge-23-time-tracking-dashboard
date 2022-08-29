@@ -1,0 +1,13 @@
+@use 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: variables.$Very-dark-blue;
+    font-family: variables.$font;
+    color: variables.$Pale-Blue;
+}

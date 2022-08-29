@@ -1,0 +1,113 @@
+@use 'variables';
+@use 'initial';
+@use 'mixins';
+
+.main-container{
+    // border: 1px solid white;
+    width: 328px;
+    margin: 164px auto;
+    @media (min-width: 1200px){
+        width: 1150px;
+        display: flex;
+        height: 564px;
+    }
+}
+.first-section{
+    border: 1px solid transparent;
+    position: relative;
+    @media (min-width: 1200px){
+        padding: 24px;
+        width: 290px;    
+        height: 564px;
+    }  
+}
+.second-section{
+    margin-top: 130px;
+    @media (min-width: 1200px){
+        margin-top: 0;
+        padding: 24px;
+        width: 860px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 564px;
+    }
+}
+.main-card{
+    margin-bottom: 92px;
+    &__user{
+        background-color: variables.$Blue;
+        display: flex;
+        border-radius: 16px;
+        padding: 30px;
+        position: absolute;
+        z-index: 10;
+    }
+    &__image{
+        width: 72px;
+        background-color: variables.$White;
+        border: 3px solid variables.$White;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    &__title{
+        font-size: 0.9em;
+        margin: 10px 0 4px;
+    }
+    &__name{
+        font-weight: 300;
+        color: variables.$White;
+        font-size: 1.6em;
+    }
+    &__dates{
+        background-color: variables.$Dark-blue;
+        border-radius: 16px;
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 52px;
+        font-size: 1.2em;
+        margin-top: 100px;
+        
+    }
+    &__frequency{
+       
+        &:hover{
+            color: variables.$White ;
+            cursor: pointer;
+        }
+        &--active{
+            color: variables.$White;
+        }
+    }
+    @media (min-width: 1200px){
+        &__user{
+            width: 256px;
+            height: 340px;
+            flex-direction: column;
+            padding-top: 35px;
+        }
+        &__image{
+            width: 85px;
+            margin-bottom: 45px;
+        }
+        &__title{
+            font-size: 1em;
+        }
+        &__name{
+            font-size: 2.4em;
+        }
+        &__dates{
+            width: 256px;
+            height: 200px;
+            flex-direction: column;
+            padding: 40px 32px 18px;
+            margin-top: 310px;
+        }
+    }
+}
+
+.card{
+    @include mixins.card(variables.$Light-orange);
+}
